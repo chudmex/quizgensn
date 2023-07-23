@@ -1,0 +1,56 @@
+<h2>
+  {{title}}
+</h2>
+
+<p-card [header]="ques.label" *ngFor="let ques of questionsQuiz" class="{{ques.classText}}">
+
+  <div *ngIf="ques.tieneImagen">
+    <img [src]="ques.imagePath" alt="Image Source">
+  </div>
+
+  <div *ngIf="ques.isMulti == true">
+    <div>
+      <div class="flex flex-column gap-3">
+        <div *ngFor="let check of ques.answers">
+          <p-checkbox [inputId]="'checkques' + ques.numberQuestion + '_anws_' + check.letter"  [value]="check.letter" [(ngModel)]="ques.answerSelected"></p-checkbox>
+          <label  [for]="'checkques' + ques.numberQuestion + '_anws_' + check.letter" class="ml-2">{{check.text}}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="ques.isMulti == false">
+    <div>
+      <div class="flex flex-column gap-3">
+        <div *ngFor="let radio of ques.answers" class="field-checkbox">
+            <p-radioButton [inputId]="'radioques' + ques.numberQuestion + '_anws_' + radio.letter" name="category" [value]="radio.letter"  [(ngModel)]="ques.answerSelected"></p-radioButton>
+            <label [for]="'radioques' + ques.numberQuestion + '_anws_' + radio.letter" class="ml-2">{{ radio.text }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</p-card>
+
+<button pButton pRipple label="Validar" class="p-button-success" (click)="validarRespuestas()"></button>
+
+<p-dialog header="Resumen" [(visible)]="mostrarResumen" [style]="{width: '50vw'}" [modal]="true" [draggable]="false" [resizable]="false">
+      <p>Total de Preguntas: {{questionsQuiz.length}}</p>
+      <p>Total de Aciertos: {{totalAciertos}}</p>
+      <p>Total de Errores: {{totalErrores}}</p>
+      <p>Probabilidad: {{probalilidadPorcentaje  | number : '2.2-2'}} %</p>
+      <button pButton pRipple label="Continuar" class="p-button-success" (click)="continuar()"></button>
+</p-dialog>
+
+<p-dialog header="Inicio" [(visible)]="mostrarOpcionesInicio" [style]="{width: '50vw'}" [modal]="true" [draggable]="false" [resizable]="false">
+  <p> Elija las siguientes opciones: </p>
+  <p> Preguntas Random <p-inputSwitch [(ngModel)]="preguntasRandom"></p-inputSwitch></p>
+  <p> Respuestas Random <p-inputSwitch [(ngModel)]="respuestasRandom"></p-inputSwitch></p>
+  <button pButton pRipple label="Continuar" class="p-button-success" (click)="iniciarQuiz()"></button>
+</p-dialog>
+
+<p-blockUI [blocked]="bloquearPantalla">
+  <p class="m-0">
+    Por favor espere...
+  </p>
+</p-blockUI>

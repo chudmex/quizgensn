@@ -1,0 +1,82 @@
+.card{
+    background: var(--surface-e);
+    padding: 2rem;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.margenInferior10{
+    margin-bottom: 20px;
+}
+
+.ml-2 {
+    margin-left: 0.5rem!important;
+}
+
+
+.p-card .p-card-title .questionOk {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.p-card .p-card-title .questionBad {
+    color:red;
+    font-weight: bold;
+}
+
+.questionOk .p-card .p-card-title {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.questionBad .p-card .p-card-title  {
+    color:red;
+    font-weight: bold;
+}
+
+
+.p-card-header .questionOk .p-card-title{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.p-card-header .questionBad .p-card-title{
+    color:red;
+    font-weight: bold;
+}
+
+.questionOk .p-card-header .p-card-title{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.questionBad .p-card-header .p-card-title{
+    color:red;
+    font-weight: bold;
+}
+
+.questionNormal{
+    color: black;
+}
+
+.questionOk {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.questionBad {
+    color:red;
+    font-weight: bold;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css"
