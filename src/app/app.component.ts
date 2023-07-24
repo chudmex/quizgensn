@@ -37,6 +37,7 @@ export class AppComponent {
 
     for (let i = 0; i < this.questionsQuiz.length; i++) {
       this.questionsQuiz[i].classText = 'questionNormal';
+      
       if(this.questionsQuiz[i].tieneImagen){
         this.questionsQuiz[i].imagePath = this._sanitizer.bypassSecurityTrustResourceUrl('data:image/png;base64,' 
         + this.questionsQuiz[i].image);
@@ -111,7 +112,7 @@ export class AppComponent {
   }
 
   continuar(){
-    this.mostrarOpcionesInicio = false;
+    this.mostrarResumen = false;
   }
 
   iniciarQuiz(){

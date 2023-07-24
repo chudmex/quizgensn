@@ -2,7 +2,7 @@
   {{title}}
 </h2>
 
-<p-card [header]="ques.label" *ngFor="let ques of questionsQuiz" class="{{ques.classText}}">
+<p-card [header]="ques.numberQuestion + '.- ' + ques.label" *ngFor="let ques of questionsQuiz" class="{{ques.classText}}">
 
   <div *ngIf="ques.tieneImagen">
     <img [src]="ques.imagePath" alt="Image Source">
