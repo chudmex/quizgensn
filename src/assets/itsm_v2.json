@@ -3234,17 +3234,17 @@
             },
             {
                "numberAnswer": 2,
-               "text": "On the Cart Layout, Columns tab, unselect Quantity column",
+               "text": "On the Catalog Item, Columns tab, unselect Quantity column",
                "letter": "B"
             },
             {
                "numberAnswer": 3,
-               "text": "On the Cart Layout, Columns tab, unselect Quantity column",
+               "text": "On the Catalog Item, Advanced View, unselect Use cart layout, select No quantity",
                "letter": "C"
             },
             {
                "numberAnswer": 4,
-               "text": "On the Cart Layout, Columns tab, unselect Quantity column",
+               "text": "On the Catalog, Advanced View, unselect Use cart layout, select No quantity",
                "letter": "D"
             },
             {
