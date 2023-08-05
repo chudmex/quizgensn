@@ -1714,7 +1714,7 @@
             },
             {
                "numberAnswer": 4,
-               "text": " Do not go to deep with subcategories: go only 1-2 levels deep",
+               "text": "Do not go to deep with subcategories: go only 1-2 levels deep",
                "letter": "D"
             }
          ]
@@ -2493,7 +2493,7 @@
             },
             {
                "numberAnswer": 4,
-               "text": " Incident managers authorize problem investigations",
+               "text": "Incident managers authorize problem investigations",
                "letter": "D"
             }
          ]
@@ -2846,7 +2846,7 @@
             },
             {
                "numberAnswer": 2,
-               "text": " Change Overview",
+               "text": "Change Overview",
                "letter": "B"
             },
             {
@@ -3006,7 +3006,7 @@
             },
             {
                "numberAnswer": 2,
-               "text": " Coaching loops",
+               "text": "Coaching loops",
                "letter": "B"
             },
             {
@@ -3161,7 +3161,7 @@
          "answers": [
             {
                "numberAnswer": 1,
-               "text": " Knowledge Item",
+               "text": "Knowledge Item",
                "letter": "A"
             },
             {
@@ -3171,7 +3171,7 @@
             },
             {
                "numberAnswer": 3,
-               "text": " Content Item",
+               "text": "Content Item",
                "letter": "C"
             },
             {
@@ -3181,7 +3181,7 @@
             },
             {
                "numberAnswer": 5,
-               "text": " Catalog Item",
+               "text": "Catalog Item",
                "letter": "E"
             }
          ]
@@ -3375,7 +3375,7 @@
             },
             {
                "numberAnswer": 4,
-               "text": " Order Guide",
+               "text": "Order Guide",
                "letter": "D"
             }
          ]
@@ -3549,7 +3549,7 @@
             },
             {
                "numberAnswer": 4,
-               "text": " Form Designs",
+               "text": "Form Designs",
                "letter": "D"
             },
             {
@@ -3738,7 +3738,7 @@
             },
             {
                "numberAnswer": 4,
-               "text": " Enable system property com.snc.incident.incident_task.closure",
+               "text": "Enable system property com.snc.incident.incident_task.closure",
                "letter": "D"
             }
          ]
@@ -4096,7 +4096,7 @@
             },
             {
                "numberAnswer": 2,
-               "text": " SLAs may be counterproductive to problem management, as the key objective is to permanently fix an error no matter how long that may take",
+               "text": "SLAs may be counterproductive to problem management, as the key objective is to permanently fix an error no matter how long that may take",
                "letter": "B"
             },
             {
@@ -4556,7 +4556,7 @@
             },
             {
                "numberAnswer": 4,
-               "text": " How to document",
+               "text": "How to document",
                "letter": "D"
             }
          ]
@@ -4564,7 +4564,7 @@
       {
          "numberQuestion": 149,
          "label": "What are the different ways a user can provide feedback on a knowledge article? (Choose four.)",
-         "isMulti": false,
+         "isMulti": true,
          "validAnswers": "A,B,C,E",
          "tieneImagen": false,
          "answers": [
