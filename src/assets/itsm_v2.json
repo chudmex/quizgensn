@@ -3654,7 +3654,7 @@
       {
          "numberQuestion": 119,
          "label": "When you activate the ITSM Roles plugin, what additional granular roles are created for the Incident application? (Choose two.)",
-         "isMulti": false,
+         "isMulti": true,
          "validAnswers": "B,C",
          "tieneImagen": false,
          "answers": [
@@ -3832,7 +3832,7 @@
       },
       {
          "numberQuestion": 125,
-         "label": "f the Assignment group is empty on an incident record, what happens when an agent that is a member of multiple user groups clicks the Assign to me UI action?",
+         "label": "If the Assignment group is empty on an incident record, what happens when an agent that is a member of multiple user groups clicks the Assign to me UI action?",
          "isMulti": false,
          "validAnswers": "B",
          "tieneImagen": false,
@@ -4419,8 +4419,8 @@
       {
          "numberQuestion": 144,
          "label": "What are key relationships between Changes and Incidents? (Choose two.)",
-         "isMulti": false,
-         "validAnswers": "B",
+         "isMulti": true,
+         "validAnswers": "B,C",
          "tieneImagen": false,
          "answers": [
             {

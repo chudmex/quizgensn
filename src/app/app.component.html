@@ -1,5 +1,5 @@
 <h2>
-  {{title}}
+  {{title}} version 1.1
 </h2>
 
 <p-card [header]="ques.numberQuestion + '.- ' + ques.label" *ngFor="let ques of questionsQuiz" class="{{ques.classText}}">
@@ -32,7 +32,9 @@
 
 </p-card>
 
-<button pButton pRipple label="Validar" class="p-button-success" (click)="validarRespuestas()"></button>
+<div class="fab-container">
+  <button pButton pRipple label="Validar" class="p-button-success" (click)="validarRespuestas()"></button>
+</div>
 
 <p-dialog header="Resumen" [(visible)]="mostrarResumen" [style]="{width: '50vw'}" [modal]="true" [draggable]="false" [resizable]="false">
       <p>Total de Preguntas: {{questionsQuiz.length}}</p>
